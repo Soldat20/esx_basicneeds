@@ -54,16 +54,16 @@ ESX.RegisterUsableItem('burger', function(source)
 
 end)
 
-ESX.RegisterUsableItem('hot dog', function(source)
+ESX.RegisterUsableItem('brat', function(source)
 
 	local _source = source
     local xPlayer = ESX.GetPlayerFromId(_source)
 
-	xPlayer.removeInventoryItem('hot dog', 1)
+	xPlayer.removeInventoryItem('brat', 1)
 
 	TriggerClientEvent('esx_status:add', source, 'hunger', 200000)
 	TriggerClientEvent('esx_basicneeds:onEat', source)
-	TriggerClientEvent('esx:showNotification', source, _U('used_hot dog'))
+	TriggerClientEvent('esx:showNotification', source, _U('used_brat'))
 
 end)
 
@@ -106,29 +106,29 @@ ESX.RegisterUsableItem('cookie', function(source)
 
 end)
 
-ESX.RegisterUsableItem('candy bar', function(source)
+ESX.RegisterUsableItem('snickers', function(source)
 
 	local _source = source
     local xPlayer = ESX.GetPlayerFromId(_source)
 
-	xPlayer.removeInventoryItem('candy bar', 1)
+	xPlayer.removeInventoryItem('snickers', 1)
 
 	TriggerClientEvent('esx_status:add', source, 'hunger', 100000)
 	TriggerClientEvent('esx_basicneeds:onEat', source)
-	TriggerClientEvent('esx:showNotification', source, _U('used_candy bar'))
+	TriggerClientEvent('esx:showNotification', source, _U('used_snickers'))
 
 end)
 
-ESX.RegisterUsableItem('grilled cheese', function(source)
+ESX.RegisterUsableItem('sandwich', function(source)
 
 	local _source = source
     local xPlayer = ESX.GetPlayerFromId(_source)
 
-	xPlayer.removeInventoryItem('grilled cheese', 1)
+	xPlayer.removeInventoryItem('sandwich', 1)
 
 	TriggerClientEvent('esx_status:add', source, 'hunger', 300000)
 	TriggerClientEvent('esx_basicneeds:onEat', source)
-	TriggerClientEvent('esx:showNotification', source, _U('used_grilled cheese'))
+	TriggerClientEvent('esx:showNotification', source, _U('used_sandwich'))
 
 end)
 
@@ -145,16 +145,16 @@ ESX.RegisterUsableItem('pancakes', function(source)
 
 end)
 
-ESX.RegisterUsableItem('mac n cheese', function(source)
+ESX.RegisterUsableItem('donut', function(source)
 
 	local _source = source
     local xPlayer = ESX.GetPlayerFromId(_source)
 
-	xPlayer.removeInventoryItem('mac n cheese', 1)
+	xPlayer.removeInventoryItem('donut', 1)
 
 	TriggerClientEvent('esx_status:add', source, 'hunger', 200000)
 	TriggerClientEvent('esx_basicneeds:onEat', source)
-	TriggerClientEvent('esx:showNotification', source, _U('used_mac n cheese'))
+	TriggerClientEvent('esx:showNotification', source, _U('used_donut'))
 
 end)
 
